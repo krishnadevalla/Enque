@@ -1,0 +1,55 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Enque.instructions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <Grid HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="728">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/gameback.png"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="233" VerticalAlignment="Top" Width="201" Margin="50,155,0,0" Background="#FFE8B710" Opacity="0.5"/>
+        <StackPanel HorizontalAlignment="Left" Height="233" VerticalAlignment="Top" Width="196" Margin="50,155,0,0">
+            <Button Content="New Play" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Click="Button_Click_1"/>
+            <Button x:Name="inst" Content="Instructions" HorizontalAlignment="Left" VerticalAlignment="Top" Height="76" Click="inst_Click"/>
+            <Button x:Name="abou" Content="About" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Click="abou_Click"/>
+        </StackPanel>
+        <Grid x:Name="showgrid" HorizontalAlignment="Left" Height="391" VerticalAlignment="Top" Width="393" Margin="276,48,0,0" Background="#FF252424" Visibility="Collapsed">
+            <TextBlock x:Name="abouttext" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="220" Width="339" Margin="25,94,0,0" Visibility="Collapsed">
+            	<Run Text="This is designed to make yourself speed in making things in order and this helps you in many ways."/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="Version: 1.0."/>
+            	<Run Text="1"/>
+            	<Run Text=".0"/>
+            	<LineBreak/>
+            	<Run Text="Designed by PriLee.co"/>
+            	<LineBreak/>
+            	<Run Text="Feedback us : prilee.co@gmail.com"/>
+            </TextBlock>
+            <TextBlock x:Name="insttext" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="48,94,0,0" Height="236" Width="316" Visibility="Collapsed">
+            	<Run Text="How to play :"/>
+            	<LineBreak/>
+            	<Run Text="-----------------"/>
+            	<LineBreak/>
+            	<Run Text="1) Click on the numbers in                              ascending order starting from 1."/>
+            	<LineBreak/>
+            	<Run Text="2) Watch the timer."/>
+            	<LineBreak/>
+            	<Run Text="3) Don't get confuse with the last hit item, it will be displayed."/>
+            </TextBlock>
+        </Grid>
+    </Grid>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,130 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI" 
+    x:Class="Enque.Page2"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded_1">
+	<phone:PhoneApplicationPage.Resources>
+		<Storyboard x:Name="scorefall">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="grid">
+				<EasingDoubleKeyFrame KeyTime="0" Value="6.509"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="502.824"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</phone:PhoneApplicationPage.Resources>
+    <Grid HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="728">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/leve2bg.png"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="117" Background="#FF535B52" Opacity="0.5" Margin="0,218,0,0"/>
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="8,286,0,0" Background="Black" Opacity="0.8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="lasthit" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="28,30,0,0" Foreground="#FFFAFAFB" FontWeight="Bold" FontSize="40"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="163" Background="#FF38C729" Opacity="0.5" Margin="81,401,0,0"/>
+        <Grid HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="600" Margin="117,91,0,0">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/tile1.png"/>
+            </Grid.Background>
+            <TextBlock x:Name="_1" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="4,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_1_Tap"/>
+            <TextBlock x:Name="_2" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="67,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_2_Tap"/>
+            <TextBlock x:Name="_3" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="125,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_3_Tap"/>
+            <TextBlock x:Name="_4" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="184,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_4_Tap"/>
+            <TextBlock x:Name="_5" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="244,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_5_Tap"/>
+            <TextBlock x:Name="_6" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="303,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_6_Tap"/>
+            <TextBlock x:Name="_7" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="362,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_7_Tap"/>
+            <TextBlock x:Name="_8" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="422,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_8_Tap"/>
+            <TextBlock x:Name="_9" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="479,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_9_Tap"/>
+            <TextBlock x:Name="_10" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="539,5,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_10_Tap"/>
+            <TextBlock x:Name="_11" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="4,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_11_Tap"/>
+            <TextBlock x:Name="_12" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="67,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_12_Tap"/>
+            <TextBlock x:Name="_13" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="125,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_13_Tap"/>
+            <TextBlock x:Name="_14" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="184,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_14_Tap"/>
+            <TextBlock x:Name="_15" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="244,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_15_Tap"/>
+            <TextBlock x:Name="_16" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="303,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_16_Tap"/>
+            <TextBlock x:Name="_17" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="362,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_17_Tap"/>
+            <TextBlock x:Name="_18" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="422,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_18_Tap"/>
+            <TextBlock x:Name="_19" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="479,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_19_Tap"/>
+            <TextBlock x:Name="_20" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="539,67,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_20_Tap"/>
+            <TextBlock x:Name="_21" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="4,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_21_Tap"/>
+            <TextBlock x:Name="_22" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="67,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_22_Tap"/>
+            <TextBlock x:Name="_23" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="125,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_23_Tap"/>
+            <TextBlock x:Name="_24" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="184,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_24_Tap"/>
+            <TextBlock x:Name="_25" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="244,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_25_Tap"/>
+            <TextBlock x:Name="_26" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="303,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_26_Tap"/>
+            <TextBlock x:Name="_27" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="362,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_27_Tap"/>
+            <TextBlock x:Name="_28" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="422,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_28_Tap"/>
+            <TextBlock x:Name="_29" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="479,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_29_Tap"/>
+            <TextBlock x:Name="_30" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="539,121,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_30_Tap"/>
+            <TextBlock x:Name="_31" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="4,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_31_Tap"/>
+            <TextBlock x:Name="_32" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="67,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_32_Tap"/>
+            <TextBlock x:Name="_33" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="125,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_33_Tap"/>
+            <TextBlock x:Name="_34" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="184,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_34_Tap"/>
+            <TextBlock x:Name="_35" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="244,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_35_Tap"/>
+            <TextBlock x:Name="_36" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="303,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_36_Tap"/>
+            <TextBlock x:Name="_37" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="362,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_37_Tap"/>
+            <TextBlock x:Name="_38" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="422,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_38_Tap"/>
+            <TextBlock x:Name="_39" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="479,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_39_Tap"/>
+            <TextBlock x:Name="_40" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="539,183,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_40_Tap"/>
+            <TextBlock x:Name="_41" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="4,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_41_Tap"/>
+            <TextBlock x:Name="_42" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="67,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_42_Tap"/>
+            <TextBlock x:Name="_43" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="125,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_43_Tap"/>
+            <TextBlock x:Name="_44" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="184,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_44_Tap"/>
+            <TextBlock x:Name="_45" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="244,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_45_Tap"/>
+            <TextBlock x:Name="_46" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="303,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_46_Tap"/>
+            <TextBlock x:Name="_47" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="362,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_47_Tap"/>
+            <TextBlock x:Name="_48" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="422,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_48_Tap"/>
+            <TextBlock x:Name="_49" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="479,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_49_Tap"/>
+            <TextBlock x:Name="_50" TextWrapping="Wrap" Text="50" Height="55" Width="55" Margin="539,240,0,0" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Andy" FontSize="40" Foreground="#FF0A4EC7" Tap="_50_Tap"/>
+        </Grid>
+        <UI:AdControl x:Name="Enque2" ApplicationId="6193c480-43ba-4c40-b7da-2d4e58e13e8d" AdUnitId="116827" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="480" Margin="237,394,0,0"/>
+        <UI:AdControl x:Name="Enque1" ApplicationId="6193c480-43ba-4c40-b7da-2d4e58e13e8d" AdUnitId="116827" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="480" Margin="232,6,0,0"/>
+        <Grid HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="227" Background="#FF38C729" Opacity="0.5" Margin="0,11,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Score :" VerticalAlignment="Top" Margin="4,27,0,0" FontFamily="Algerian" FontSize="36" Height="53" Width="133"/>
+        <TextBlock x:Name="dispscore" HorizontalAlignment="Left" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Margin="120,25,0,0" FontFamily="Algerian" FontSize="40" TextAlignment="Center" Foreground="#FF0F2D97" Height="47" Width="110"/>
+        <Grid HorizontalAlignment="Left" Height="102" Margin="24,106,0,0" VerticalAlignment="Top" Width="72">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Untitled.png"/>
+            </Grid.Background>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Last Hit" VerticalAlignment="Top" Margin="19,294,0,0" Foreground="#FFFAFAFB" FontWeight="Bold" Height="27" Width="72"/>
+        <MediaElement x:Name="easymediatap" AutoPlay="False" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="/media/silencer.mp3"/>
+        <MediaElement x:Name="errormedia" AutoPlay="False" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="/media/bell1.mp3"/>
+        <TextBlock x:Name="reloadtext" HorizontalAlignment="Left" TextWrapping="Wrap" Text="RELOAD" VerticalAlignment="Top" Margin="88,406,0,0" FontWeight="Bold" FontSize="39" Tap="reloadtext_Tap"/>
+        <TextBlock x:Name="time" HorizontalAlignment="Left" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Margin="42,217,0,0" FontFamily="Segoe WP Black" Foreground="#FF29F00C" TextAlignment="Center" Height="38" FontSize="30"/>
+        <Grid x:Name="grid" HorizontalAlignment="Left" Height="482" VerticalAlignment="Top" Width="728" RenderTransformOrigin="0.5,0.5" Margin="0,-503,0,0">
+            <Grid.RenderTransform>
+                <CompositeTransform/>
+            </Grid.RenderTransform>
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/back.png"/>
+            </Grid.Background>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="You can try better than this :)" VerticalAlignment="Top" Margin="62,80,0,0" Width="583" Height="61" FontFamily="Segoe WP Black" FontSize="40" Foreground="White"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Your score is " VerticalAlignment="Top" Margin="62,166,0,0" Width="261" Height="61" FontFamily="Segoe WP Black" FontSize="40" Foreground="White"/>
+            <TextBlock x:Name="finalscore" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="328,167,0,0" Width="98" Height="61" FontFamily="Segoe WP Black" FontSize="40" TextAlignment="Center" Foreground="#FF2121E4"/>
+            <UI:AdControl x:Name="Enque2_Copy" ApplicationId="6193c480-43ba-4c40-b7da-2d4e58e13e8d" AdUnitId="116827" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="480" Margin="209,354,0,0"/>
+            <TextBlock x:Name="reloadtext_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="RELOAD" VerticalAlignment="Top" Margin="276,312,0,0" FontWeight="Bold" FontSize="39" Tap="reloadtext_Tap" Foreground="#FFB90202"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Last Hit is " VerticalAlignment="Top" Margin="62,227,0,0" Width="261" Height="61" FontFamily="Segoe WP Black" FontSize="40" Foreground="White"/>
+            <TextBlock x:Name="lasthit1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="291,227,0,0" Width="90" Height="61" FontFamily="Segoe WP Black" FontSize="40" Foreground="#FF047213" TextAlignment="Center"/>
+        </Grid>
+    </Grid>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+</phone:PhoneApplicationPage>
